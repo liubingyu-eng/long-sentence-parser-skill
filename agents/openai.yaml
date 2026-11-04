@@ -1,0 +1,9 @@
+# agents/openai.yaml
+# OpenAI 兼容运行时的注入配置：运行时把本 Skill 作为指令注入给模型。
+# 完整行为指令见 ../SKILL.md，本文件只做最小绑定，不重复定义流程。
+
+name: long-sentence-parser-skill
+version: 1.0.0
+description: 面向专四备考、外刊精读的英文长难句解析工具，专门处理多层从句嵌套复杂句，帮使用者快速剥离主干、理清修饰关系；接收英文长难句后固定输出句子成分拆分、中文翻译、关键语法标注、逻辑梳理四个模块。
+instructions:
+  - source: ../SKILL.md
